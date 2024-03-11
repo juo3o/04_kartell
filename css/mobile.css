@@ -1,0 +1,119 @@
+@charset "uft-8";
+/* 모바일서식 */
+@media screen and (max-width:767px) {
+/* 헤더 */
+body { overflow-x: hidden; } 
+header { height:70px; } 
+header .h_inner { padding: 20px; } 
+header .h_inner h1 img { width: 91px; } 
+.toggle { display:block; position: absolute; right:20px; top:20px; width:25px; height:25px; z-index: 10; } 
+/* 토글버튼 */
+.toggle span { display:inline-block; width:25px; height:2px; background:#fff; position:absolute; transition:0.5s; } 
+.toggle span:first-child { top:0px; } 
+.toggle span:nth-child(2) { top:22px; } 
+.toggle span:last-child { bottom:12px; } 
+.rotate1 { transform:rotate(45deg); left:0px; top:12px !important; } 
+.rotate2 { transform:rotate(-45deg); bottom: 11px !important; right:0px; } 
+/* 내비게이션 */
+#searchbox, .toggleimg { display: block; } 
+nav a { text-decoration: underline; } 
+/* 내비배경 */
+.h_wrap { background: #000; width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; display: none; } 
+nav > ul { display: block; top: 150px; right: 0px; left: 0px; margin: 0px auto; font-size: 15px; transform: translate(0,0); } 
+nav > ul > li { width: 100%; background: #fff; } 
+nav > ul > li > a { display: block; color: #000; padding: 30px 0px; } 
+nav > ul > li:first-child > a::after,
+nav > ul > li:nth-child(2) > a::after,
+nav > ul > li:nth-child(5) > a::after { content: " +"; color: #E30613; font-size: 18px; } 
+/* 서브내비게이션 */
+.sub { margin-top: 0px; display: none; background: #B0B0B0; } 
+.sub li { line-height: 50px; } 
+.sub li a { color: #fff; } 
+/* 서브hover없애기 */
+header hr { display: none; } 
+/* 헤더아이콘 */
+.h_icon ul { top: 30px; left: 0px; } 
+.h_icon ul li:first-child { position: absolute; top: 50px; left: 50%; transform: translate(-50%,0); padding: 0px; width: 60%; } 
+.h_icon ul li:first-child input { background: none; border: none; border-bottom: 2px solid #fff; width: 100%; color: #fff; line-height: 30px; } 
+.h_icon ul li:first-child input:focus { outline:none; } 
+.h_icon ul li:first-child img { position: absolute; top: 2px; right: 0px; } 
+/* 모바일토글 이미지 */
+.toggleimg { width: 100%; } 
+/* 메인 */
+main article > h2 { font-size: 20px; font-weight: 400; padding: 6px 0px 15px 0px; } 
+main article > p { font-size: 13px; } 
+/* pc 콘텐츠별 여백 */
+main .content_margin { margin: 90px auto; } 
+/* 메인배너 */
+.visual { height: 60vh; } 
+@media screen and (max-width:640px){.visual { height: 50vh; } }
+@media screen and (max-width:574px){.visual { height: 45vh; } }
+@media screen and (max-width:500px){.visual { height: 40vh; } }
+.visual div > a > img { width: 180%; position: relative; left: 50%; transform: translate(-50%,0); } 
+/* 좌우버튼 + 컨트롤버튼 */
+.visual .banner_btn { display: none; } 
+.visual .ctrl_btn { bottom: 8%; right: 5%; } 
+.visual .ctrl_btn li { width: 14px; height: 14px; margin-left: 10px; } 
+/* 브랜드소개/카트텔슬로건 */
+main section { display: block; width: 100%; padding: 0px 32px; box-sizing: border-box; } 
+main section img { width: 100%; } 
+.brand { margin-bottom: 32px; } 
+.brand > video { width: 100%; } 
+/* 탭메뉴 */
+.tab_con { width: 100%; height: 650px; box-sizing: border-box; } 
+.tab_con_wrap { width: 198px; } 
+.tab_con_wrap > li { padding: 0px 10px; } 
+.tab_con_wrap > li > a { font-size: 20px; } 
+.tab { width: 100%; top: 60px; display: grid; grid-template-areas:
+"tab1 tab2"
+"tab3 tab4"
+; display: none; } 
+.tab li { width: 230px; margin: 0px auto; } 
+.tab img { width: 100%; } 
+.tab li:first-child { grid-area: tab1; } 
+.tab li:nth-child(2) { grid-area: tab2; } 
+.tab li:nth-child(3) { grid-area: tab3; } 
+.tab li:last-child { grid-area: tab4; } 
+.tab p { font-size: 13px; } 
+.tab1 { display: grid; } 
+/* 아이웨어 */
+.eyewear img { width: 172%; } 
+.eyewear p { top:70px; left: 64%; font-size: 13px; line-height: 20px; } 
+.eyewear p span { font-size: 25px; } 
+/* 아웃도어 */
+.outdoor { width: 100%; height: 600px; padding: 0px 32px; box-sizing: border-box; } 
+/* 왼쪽배너wrap */
+.outdoor_left { display: none; } 
+/* 오른쪽배너wrap */
+.outdoor_right { left: 0px; width: 390px; margin: 0px auto; } 
+.outdoor_right ul { width: 1560px; } 
+.outdoor_right ul li { width: 390px; margin-top: 30px; } 
+.outdoor_right ul li img { width: 390px; } 
+.outdoor_right ul li p { font-size: 13px; line-height: 20px; } 
+/* 배너좌우버튼 */
+.outdoor div .btn { position: absolute; top: 250px; left: 0px; } 
+.outdoor div .outleftbtn { position: absolute; left: 0px; } 
+.outdoor div .outrightbtn { position: absolute; right: 0px; } 
+/* 뉴스 */
+.news { width: 100%; padding: 0px 32px; box-sizing: border-box; } 
+.news ul { display: block; margin-top: 30px; } 
+.news ul li { width: 100%; } 
+.news ul li:hover div { transform: translate(0px, 557px); } 
+.news h3, .news p { font-size: 13px; } 
+/* 푸터 */
+footer { font-size: 12px; } 
+.f_inner { width: 100%; padding: 32px 0px; box-sizing: border-box; } 
+.f_inner > ul { width: 100%; } 
+.f_inner > a > img { width: 104px; } 
+.f_inner > ul > li { border-left: none; } 
+.f_inner > ul > li:first-child { padding: 0px 0px; } 
+.f_inner > ul > li:last-child { border-right: none; padding: 10px 22px; } 
+.f_inner > ul > li:last-child ul { display: block; padding: 30px 0px 0px 0px!important; font-size: 20px; } 
+.f_inner > ul > li:last-child ul li:first-child { transform: translate(0,0); } 
+.f_inner > ul > li:last-child ul li:last-child { transform: translate(0px,0px); } 
+.f_bottom { display: block; padding: 0px 32px; } 
+.f_bottom > p { padding-top: 30px; text-align: left; } 
+/* top버튼 */
+.top_btn { display: none; } 
+}
+

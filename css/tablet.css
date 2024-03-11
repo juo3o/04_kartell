@@ -1,0 +1,102 @@
+@charset "uft-8";
+/* 타블렛 서식 */
+@media screen and (min-width:768px) and (max-width:1280px) {
+/* 헤더 */
+header { height: 70px; } 
+/* header백그라운드높이 */
+.act1 { background: rgba(0,0,0,.5); width: 100%; height: 320px !important; border-bottom: 1px solid #fff; transition: 0.5s; } 
+/* header 상단 border */
+.act2 { height: 70px; border-bottom: 1px solid #fff; } 
+header .h_inner { width: 100%; display: block; padding: 0px 32px; box-sizing: border-box; } 
+header .h_inner h1 img { width: 140px; padding-top: 14px; box-sizing: border-box; } 
+/* 토글버튼 */
+.toggle { display:block; position: absolute; top:32px; right: 140px; width:22px; height:20px; cursor: pointer; z-index: 10; } 
+.toggle span { display:inline-block; width:22px; height:2px; background:#fff; position:absolute; transition:0.5s; } 
+.toggle span:first-child { top:0px; } 
+.toggle span:nth-child(2) { top:16px; } 
+.toggle span:last-child { bottom:10px; } 
+.rotate1 { transform:rotate(45deg); left:0px; top:7px !important; } 
+.rotate2 { transform:rotate(-45deg); bottom: 11px !important; right:0px; } 
+/* 내비게이션 */
+nav { display: none; } 
+nav > ul { width: 65%; position: absolute; top: 32px; right: 260px; font-size: 14px; } 
+nav > ul > li { width: 100%; margin: 0px 1%; } 
+/* 서브내비게이션 */
+.sub { display: none; margin-top: 30px; } 
+.sub li { line-height: 30px; } 
+/* 헤더아이콘 */
+.h_icon ul { top: 28px; right: 32px; } 
+.h_icon ul li { padding-left: 12px; } 
+/* 메인 */
+main article > h2 { font-size: 20px; font-weight: 400; padding: 6px 0px 15px 0px; } 
+main article > p { font-size: 13px; } 
+/* pc 콘텐츠별 여백 */
+main .content_margin { margin: 100px auto; } 
+/* 메인배너 */
+.visual { height: 60vh; } 
+@media screen and (max-width:1190px){.visual { height: 55vh; } }
+@media screen and (max-width:1084px){.visual { height: 50vh; } }
+@media screen and (max-width:1000px){.visual { height: 45vh; } }
+@media screen and (max-width:895px){.visual { height: 40vh; } }
+@media screen and (max-width:810px){.visual { height: 38vh; } }
+/* 좌우버튼 */
+.visual .banner_btn li img { width: 40px; } 
+/* 컨트롤버튼 */
+.visual .ctrl_btn li { width: 14px; height: 14px; margin-left: 10px; } 
+/* 브랜드소개/카르텔슬로건 */
+main section { width: 100%; grid-gap: 20px; padding: 0px 32px; box-sizing: border-box; } 
+.brand { width: 50%; } 
+.brand > video { width: 100%; } 
+.loves { width: 50%; } 
+.loves img { width: 100%; } 
+/* 탭메뉴 */
+.tab_con { width: 100%; } 
+@media screen and (max-width:950px){.tab_con { height: 380px; } }
+@media screen and (max-width:880px){.tab_con { height: 360px; } }
+.tab_con_wrap { width: 345px; } 
+.tab_con_wrap > li > a { font-size: 15px; } 
+.tab { width: 100%; padding: 0px 32px; box-sizing: border-box; } 
+.tab img { width: 100%; } 
+/* 아이웨어 */
+.eyewear img { width: 110%; } 
+.eyewear p { top: 30%; font-size: 13px; line-height: 20px; } 
+.eyewear p span { font-size: 23px; } 
+/* 아웃도어 */
+.outdoor { width: 100%; height: 500px; padding: 0px 32px; box-sizing: border-box; } 
+.outdoor > div { width: 700px; margin: 20px auto; position: relative; } 
+/* 왼쪽배너wrap */
+.outdoor_left { width: 273px; } 
+.outdoor_left ul { width: 1092px; } 
+.outdoor_left ul li { width: 273px; } 
+.outdoor_left ul li img { width: 100%; } 
+/* 오른쪽배너wrap */
+.outdoor_right { width: 285px; left: 80px; } 
+.outdoor_right ul { width: 1140px; } 
+.outdoor_right ul li { width: 285px; margin-top: 10px; } 
+.outdoor_right ul li img { width: 285px; } 
+/* 배너좌우버튼 */
+.outdoor div .btn { position: absolute; top: 150px; left: 300px; } 
+.outdoor div .outleftbtn { position: absolute; left: 0px; } 
+.outdoor div .outrightbtn { position: absolute; left: 355px; } 
+/* 뉴스 */
+.news { width: 100%; padding: 0px 32px; box-sizing: border-box; } 
+.news ul { grid-column-gap: 0px; margin-top: 30px; } 
+.news ul li { width: 100%; height: auto; } 
+.news ul li:hover div { transform: translate(0px, 557px); } 
+.news img { width: 100%; } 
+.news ul li h3 { font-size: 12px; } 
+.news ul li p { font-size: 12px; } 
+/* 푸터 */
+footer { font-size: 12px; } 
+.f_inner { width: 100%; } 
+.f_inner > a > img { width: 104px; } 
+.f_inner > ul > li { border-left: none; } 
+.f_inner > ul > li:first-child { padding: 0px 0px; } 
+.f_inner > ul > li:last-child { border-right: none; padding: 10px; } 
+.f_inner > ul > li:last-child ul { padding: 60px 0px 0px 0px!important; font-size: 20px; } 
+.f_bottom { padding: 0px 32px; display: flex; } 
+.f_bottom address { display: flex; } 
+.f_bottom address > div { margin-right: 50px; } 
+.f_bottom > p { padding-top: 39px; } 
+.top_btn { width: 60px; height: 60px; line-height: 60px; font-size: 14px; } 
+}
